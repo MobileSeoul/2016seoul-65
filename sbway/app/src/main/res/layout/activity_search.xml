@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    tools:context="com.sbway.PathSearch.SearchActivity">
+
+    <TextView
+        android:id="@+id/path_text"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_weight="0"
+        android:text="경로검색"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:layout_weight="0"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#a491c5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"></View>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <Button
+            android:id="@+id/btn_switch_search"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/swap"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/txt_setStart_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="출발지 검색"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/txt_setEnd_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="도착지 검색"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="검색"
+            android:background="@null"
+            android:textSize="18sp"
+            android:textColor="#bfb0d3"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="최근 검색기록"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#80111111"/>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="#fff"
+        android:transcriptMode="alwaysScroll"/>
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".CalendarActivity">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:layout_height="24dp"
+        android:background="#ffffffff"/>
+
+    <LinearLayout
+        android:id="@+id/c_btn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/calendar"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="달력"
+                android:textSize="23sp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allschedule_btn"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/round_btn1"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/list"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="목록"
+                android:textSize="23sp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/calendar_title"
+        android:layout_below="@id/c_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="2dp"
+        android:background="#80fa0054">
+
+        <TextView
+            android:id="@+id/calendar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/prev_button"
+            android:text="〈"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@null"
+            android:layout_alignBaseline="@id/calendar_txt"
+            android:layout_toLeftOf="@id/calendar_txt"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:text="〉"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@null"
+            android:layout_alignBaseline="@id/calendar_txt"
+            android:layout_toRightOf="@id/calendar_txt"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/insert_btn"
+            android:src="@drawable/write"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/calendar_line"
+        android:paddingTop="15dp"
+        android:background="@drawable/calendar_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/calendar_title"/>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@id/calendar_line"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        app:compactCalendarTextSize="15sp"
+        app:compactCalendarBackgroundColor="#80ff1463"
+        app:compactCalendarTextColor="#fff"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#80c70043"
+        app:compactCalendarCurrentDayBackgroundColor="#80c70043"
+        app:compactCalendarCurrentSelectedDayIndicatorStyle="no_fill_large_indicator"
+        app:compactCalendarMultiEventIndicatorColor="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/c_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compactcalendar_view"
+        android:background="#f0f0f0">
+
+        <ImageView
+            android:id="@+id/calendar_weather"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/weather_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/calendar_weather"
+            android:layout_alignBottom="@id/calendar_weather"/>
+
+        <TextView
+            android:id="@+id/calendar_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/calendar_line2"
+        android:background="@drawable/calendar_line2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/c_txt"/>
+
+    <ListView
+        android:id="@+id/calendar_list"
+        android:layout_below="@id/calendar_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

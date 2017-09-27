@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>"디데이(0일부터)" </item>
+        <item>"날짜수(1일부터)" </item>
+    </string-array>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.sbway.DdayListActivity">
+
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:text="디데이"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/text_dday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/add_dday_17"
+            android:src="@drawable/write"
+            android:tint="#ffce56"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5px"
+            android:background="#ffce56"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ddaylist"
+        android:layout_width="match_parent"
+        android:divider="#ffffff"
+        android:dividerHeight="10dp"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"></ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0"
+        android:layout_marginBottom="-1dp">
+
+        <ImageView
+            android:id="@+id/mainbtn"
+            android:src="@drawable/mainbtn"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/schedule"
+            android:src="@drawable/schedule"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/memo"
+            android:src="@drawable/memo"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/dday"
+            android:src="@drawable/dday"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/news"
+            android:src="@drawable/news"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:src="@drawable/bookmark"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linear_menu"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp">
+
+    <TextView
+        style="@style/CustomTextView"
+        android:text="사용자 설정"
+        android:textStyle="bold"
+        android:textColor="#80ff1463"/>
+    <TextView
+        android:id="@+id/login_btn"
+        android:clickable="true"
+        style="@style/CustomTextView"
+        android:text="로그인"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/user_Loc"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:text="사용자 기본 위치 설정" />
+        <TextView
+            android:id="@+id/user_Loc_text"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#999" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginBottom="10dp"
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/CustomTextView"
+        android:text="어플 설정"
+        android:textStyle="bold"
+        android:textColor="#87ceeb"/>
+    <CheckedTextView
+        android:id="@+id/alarm_bell"
+        style="@style/CustomTextView"
+        android:text="소리 알람"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="true"
+        android:textSize="18sp" />
+    <CheckedTextView
+        android:id="@+id/alarm_vibe"
+        style="@style/CustomTextView"
+        android:text="진동 알람"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="true"
+        android:textSize="18sp" />
+
+
+    <View
+        android:layout_marginBottom="10dp"
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/CustomTextView"
+        android:text="동기화"
+        android:textStyle="bold"
+        android:textColor="#ffce56"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sync_set"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:text="동기화 주기 설정" />
+        <TextView
+            android:id="@+id/sync_set_text"
+            style="@style/CustomTextView"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#999" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sync_btn"
+        style="@style/CustomTextView"
+        android:text="동기화 실행"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_marginBottom="10dp"
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/CustomTextView"
+        android:text="어플 정보"
+        android:textStyle="bold"
+        android:textColor="#a491c5"/>
+    <TextView
+        android:id="@+id/feedback"
+        android:clickable="true"
+        style="@style/CustomTextView"
+        android:text="평가하기"
+        android:textSize="18sp" />
+    <TextView
+        style="@style/CustomTextView"
+        android:text="버전 정보 1.0.0"
+        android:textSize="18sp"
+        android:textColor="#999" />
+    <TextView
+        style="@style/CustomTextView"
+        android:text="개발자정보\n한양여자대학교 컴퓨터정보과 A반\n김진주 서민지"
+        android:textSize="18sp"
+        android:textColor="#999" />
+    <TextView
+        style="@style/CustomTextView"
+        android:text="sbway.cafe24.com"
+        android:textSize="18sp"
+        android:textColor="#999" />
+
+</LinearLayout>

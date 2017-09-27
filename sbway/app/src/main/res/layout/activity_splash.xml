@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sbwaylogo"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textSize="50sp"
+            android:textColor="#80ff1463"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/txt_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="50sp"
+            android:textColor="#87ceeb"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/txt_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:textSize="50sp"
+            android:textColor="#ffce56"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/txt_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="50sp"
+            android:textColor="#80ff0000"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/txt_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:textSize="50sp"
+            android:textColor="#a491c5"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/weather_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:textColor="#939393"
+        android:layout_marginBottom="2dp"/>
+    <TextView
+        android:id="@+id/weather_day_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp"/>
+    <ImageView
+        android:id="@+id/weather_little_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp"/>
+    <TextView
+        android:id="@+id/weather_now_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="13dp"
+            android:src="@drawable/water_drop"
+            android:tint="#28b8ec"/>
+        <TextView
+            android:id="@+id/weather_now_rain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#28b8ec"
+            android:text="20%"/>
+    </LinearLayout>
+</LinearLayout>

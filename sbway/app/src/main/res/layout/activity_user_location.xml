@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:layout_height="25dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/search"/>
+        <com.sbway.UserLocation.ClearEditText
+            android:id="@+id/userLoc_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="검색할 주소 또는 장소를 입력하세요."
+            android:imeOptions="actionSearch" />
+    </LinearLayout>
+    <View
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="0"/>
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.2"/>
+    <ListView
+        android:id="@+id/userLoc_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"></ListView>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.sbway.SignUp.SignUpActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/txt_30"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="S I G N U P"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/pw_30"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:textColorHint="#bbb"
+        android:drawableLeft="@drawable/user1"
+        android:background="@drawable/customedit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="7dp"/>
+
+    <EditText
+        android:id="@+id/pwch_30"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:textColorHint="#bbb"
+        android:drawableLeft="@drawable/padlock"
+        android:background="@drawable/customedit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="7dp" />
+
+    <EditText
+        android:id="@+id/id_30"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 확인"
+        android:textColorHint="#bbb"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/padlock"
+        android:background="@drawable/customedit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="7dp"/>
+
+    <Spinner
+        android:id="@+id/question"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:textSize="16sp"
+        android:textColor="#888"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/customedit"></Spinner>
+
+    <EditText
+        android:id="@+id/answer_30"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 확인 답변"
+        android:textColorHint="#bbb"
+        android:drawableLeft="@drawable/chat"
+        android:background="@drawable/customedit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="7dp"/>
+
+    <EditText
+        android:id="@+id/name_30"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="이름"
+        android:textColorHint="#bbb"
+        android:drawableLeft="@drawable/user_name"
+        android:background="@drawable/customedit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="7dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:textColorHint="#bbb"
+        android:inputType="textEmailAddress"
+        android:hint="ex)abc@gmail.com"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/email"
+        android:background="@drawable/customedit"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="7dp"/>
+
+    <Button
+        android:id="@+id/btn_30"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/roundbtn_login"/>
+
+</LinearLayout>

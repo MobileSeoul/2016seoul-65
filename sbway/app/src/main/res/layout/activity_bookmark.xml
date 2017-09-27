@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    tools:context="com.sbway.Bookmark.BookmarkActivity">
+
+    <RelativeLayout
+        android:id="@+id/bookmark_text"
+        android:layout_weight="0"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:text="즐겨찾기"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/bookmark_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/bookmark_plus"
+            android:src="@drawable/write"
+            android:tint="#a491c5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5px"
+            android:background="#a491c5"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/bookmarklist"
+        android:layout_margin="16dp"
+        android:layout_below="@id/bookmark_text"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0"
+        android:layout_marginBottom="-1dp">
+
+        <ImageView
+            android:id="@+id/mainbtnB"
+            android:src="@drawable/mainbtn"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/scheduleB"
+            android:src="@drawable/schedule"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/memoB"
+            android:src="@drawable/memo"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/ddayB"
+            android:src="@drawable/dday"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/newsB"
+            android:src="@drawable/news"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookmarkB"
+            android:src="@drawable/bookmark"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

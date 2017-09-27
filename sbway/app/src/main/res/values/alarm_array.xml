@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_array">
+        <item >알람 없음</item>
+        <item >정각</item>
+        <item >10분 전</item>
+        <item >30분 전</item>
+        <item >1시간 전</item>
+        <item >직접 입력</item>
+    </string-array>
+</resources>

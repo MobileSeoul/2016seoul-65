@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:background="#fff"
+    tools:context="com.sbway.Memo.MemoListActivity">
+
+    <RelativeLayout
+        android:id="@+id/textarea"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="메 모"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/memotitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/add_memo_16"
+            android:src="@drawable/write"
+            android:tint="#87ceeb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#87ceeb"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"></View>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/memolist_16"
+        android:padding="16dp"
+        android:divider="#ffffff"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textarea"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_above="@+id/bottombtnM" />
+
+    <LinearLayout
+        android:id="@+id/bottombtnM"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp">
+
+        <ImageView
+            android:id="@+id/mainbtnM"
+            android:src="@drawable/mainbtn"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/scheduleM"
+            android:src="@drawable/schedule"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/memoM"
+            android:src="@drawable/memo"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/ddayM"
+            android:src="@drawable/dday"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/newsM"
+            android:src="@drawable/news"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookmarkM"
+            android:src="@drawable/bookmark"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</RelativeLayout>

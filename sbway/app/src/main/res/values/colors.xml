@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="pure_blue">#76ddff</color>
+    <color name="dark_red">#B71C1C</color>
+    <color name="deep_dark_red">#751212</color>
+    <color name="mint">#3eb489</color>
+    <color name="pink">#ee6da2</color>
+    <color name="memo">#87ceeb</color>
+    <color name="dday">#ffce56</color>
+    <color name="schedule">#80ff1463</color>
+    <color name="bookmark">#a491c5</color>
+    <color name="etc">#c3c3c3</color>
+    <color name="logo">#3e54a5</color>
+</resources>

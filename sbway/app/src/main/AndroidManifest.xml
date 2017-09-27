@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sbway">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/sbwaylogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name=".Schedule.AlarmReceiver"
+            android:process=":remote" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Schedule.ScheduleAddActivity" />
+        <activity android:name=".Dday.DdayListActivity" />
+        <activity android:name=".Dday.DdayAddActivity" />
+        <activity android:name=".News.NewsActivity"/>
+        <activity android:name=".Memo.MemoAddActivity" />
+        <activity android:name=".Memo.MemoListActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".SignUp.SignUpActivity" />
+        <activity android:name=".Bookmark.BookmarkActivity" />
+        <activity android:name=".PathSearch.SearchActivity" />
+        <activity android:name=".UserLocation.UserLocationActivity" />
+        <activity android:name=".PathSearch.placeResultActivity" />
+        <activity android:name=".PathSearch.ResultActivity" />
+        <activity android:name=".PathSearch.DetailResultActivity" />
+        <activity android:name=".News.NewsPlusActivity" />
+        <activity android:name=".Splash.SplashActivity" />
+        <activity android:name=".Sync.DdayInsert"/>
+        <activity android:name=".Sync.DdayUpdate"/>
+        <activity android:name=".Sync.BookmarkInsert"/>
+        <activity android:name=".Sync.BookmarkUpdate"/>
+        <activity android:name=".Sync.ScheduleInsert"/>
+        <activity android:name=".Sync.ScheduleUpdate"/>
+        <activity android:name=".Sync.SyncActivity"/>
+        <activity android:name=".Schedule.AllscheduleActivity" />
+        <activity android:name=".Weather.WeatherActivity"/>
+        <service android:name=".Sync.SyncService"
+            android:process=":remote"/>
+    </application>
+
+</manifest>

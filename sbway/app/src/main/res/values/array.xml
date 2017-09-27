@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question">
+        <item>::비밀번호 찾기 질문 선택::</item>
+        <item>내가 가장 좋아하는 장소는?</item>
+        <item>나의 이상형은?</item>
+        <item>가장 기억에 남는 친구는?</item>
+        <item>나의 취미는?</item>
+    </string-array>
+</resources>
